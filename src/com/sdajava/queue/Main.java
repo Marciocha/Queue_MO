@@ -11,6 +11,8 @@ public class Main {
         queue.add("cos");
 
         queue.show();
+queue.size();
+
 
 
     }

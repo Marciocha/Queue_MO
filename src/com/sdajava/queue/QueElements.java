@@ -58,6 +58,23 @@ public class QueElements {
                 System.out.println(element.getValue());
                 element = element.getNext();
             }
+        }}
+    public void size(){
+
+        //wyswietlanie wartosci robimy w momencie kiedy pierwszy element nie jest wartoscia null
+
+        if(first != null) {
+
+            //tworzymy wskaznik do obiektu
+
+            QueueImpl element = first;
+            //do momentu az bedzie wskaznik rozny od nulla to ja chce pobierac wartosci a jak pobiore wartosci to musze wskaznik przesunac
+            int licznik = 0;
+            while (element != null) {
+                element = element.getNext();
+                licznik++;
+            }
+            System.out.println(licznik);
         }
     }
 
